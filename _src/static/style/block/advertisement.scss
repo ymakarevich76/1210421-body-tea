@@ -1,0 +1,18 @@
+.advertisement {
+
+}
+
+.advertisement__title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.advertisement__photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advertisement__photo img {
+  padding-right: 20px;
+}

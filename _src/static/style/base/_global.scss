@@ -4,9 +4,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-size: $fz-main;
   font-family: $ff-main;
-  color: $c-main;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $fz-main;
+  line-height: 23px;
+  color: $c-secondary;
+
   // overflow-x: hidden;
 }
 
@@ -25,4 +29,14 @@ img {
   box-shadow: 0 0 100px #fff inset;
 
   -webkit-text-fill-color: currentColor;
+}
+
+.main-text {
+  margin: 0;
+  font-family: $ff-main;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 23px;
+  color: $c-secondary;
 }

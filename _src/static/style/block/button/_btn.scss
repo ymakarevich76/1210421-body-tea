@@ -1,2 +1,26 @@
 .btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50em;
+  max-width: 264px;
+  width: 100%;
+  padding: 17px;
+
+
+  border: none;
+
+  font-family: $ff-main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $c-main;
+  
+  &--orange {
+    background-color: $c-accent;
+  }
+
+  &--green {
+  }
 }

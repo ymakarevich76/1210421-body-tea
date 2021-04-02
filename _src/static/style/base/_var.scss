@@ -1,14 +1,24 @@
 // //////////////////////////////////////// font-family
-$ff-main: "Roboto", sans-serif;
+$ff-main: "GothamPro", sans-serif;
+$ff-intro: "HelveticaNeueCyr", sans-serif;
+$ff-title: "GothamPro Bold", sans-serif;
 
 // //////////////////////////////////////// font-size
-$fz-main: 16px;
+$fz-main: 14px;
+$fz-title: 25px;
 
 // //////////////////////////////////////// colors 
 $c-main: #000;
-$c-secondary: gray;
-$c-accent: orange;
-
+$c-secondary: #545454;
+$c-accent: #f4e03a;
+$c-bc-burger: #08083d;
+$c-t-span--grey: #c1c1c1;
+$c-t-span--yellow: #c9ed25;
+$ellipse-grey: rgba(39, 174, 96, 0.12);
+$c-green: #08af00;
+$c-green-ellipse: #00ed2f;
+$c-line-grey: #d3d3d3;
+$c-white: #fff;
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
 $xl: 1199.98px;

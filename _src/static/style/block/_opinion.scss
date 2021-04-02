@@ -1,0 +1,79 @@
+.opinion {
+  border-bottom: 2px solid $c-line-grey;
+  padding-bottom: 70px;
+  margin-bottom: 97px;
+}
+
+.opinion__title {
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    width: 74px;
+    height: 1px;
+    background-color: $c-green;
+  }
+}
+
+
+.opinion__slider-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.opinion__slider-title {
+  text-align: center;
+  color: $c-green;
+  line-height: 29px;
+  padding-bottom: 35px;
+}
+
+.opinion__slider-text {
+  padding-left: 20px;
+  border-left: 10px solid $c-green;
+
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.opinion__slider-b-next,
+.opinion__slider-b-prev {
+  top: 10%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+  }
+}
+
+.opinion__slider-b-next {
+  background-color: $c-green;
+}
+
+.opinion__slider-b-prev {
+  border: 2px solid $c-green;
+}
+
+
+.opinion__slider-b-next svg,
+.opinion__slider-b-prev svg {
+  width: 30px;
+  height: 30px;
+}
+
+.opinion__slider-b-next svg {
+  fill: $c-white;
+}
+
+.opinion__slider-b-prev svg {
+  transform: rotate(180deg);
+  fill: $c-green;
+}

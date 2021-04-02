@@ -1,0 +1,19 @@
+.about-product {
+  padding-bottom: 85px;
+  margin-bottom: 95px;
+  border-bottom: 2px solid $c-line-grey;
+}
+
+.about-product__title {
+}
+
+.about-product__text {
+  max-width: 358px;
+  font-family: $ff-main;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 42px;
+  color: $c-green;
+  white-space: pre-wrap;
+}

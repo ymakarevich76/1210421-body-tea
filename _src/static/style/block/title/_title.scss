@@ -1,2 +1,35 @@
-.title {
+.title-1 {
+  margin: 0;
+  position: relative;
+  padding-bottom: 100px;
+  font-family: $ff-title;
+  font-weight: 700;
+  font-style: normal;
+  font-size: $fz-title;
+  line-height: 32px;
+  color: $c-main;
+  text-transform: uppercase;
+
+  &--line {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 69px;
+      left: 0;
+      width: 74px;
+      height: 1px;
+      background-color: $c-green;
+    }
+  }
+}
+
+.title-2 {
+  margin-bottom: 23px;
+  font-family: $ff-main;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $fz-title;
+  line-height: 32px;
+  color: $c-main;
 }
