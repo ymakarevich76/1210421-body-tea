@@ -1,2 +1,9 @@
 .footer {
+  position: relative;
+}
+
+.footer__img {
+  position: absolute;
+  top: -12px;
+  left: 0;
 }

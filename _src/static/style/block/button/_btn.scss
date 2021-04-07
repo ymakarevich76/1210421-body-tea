@@ -7,9 +7,6 @@
   width: 100%;
   padding: 17px;
 
-
-  border: none;
-
   font-family: $ff-main;
   font-style: normal;
   font-weight: 400;
@@ -22,5 +19,6 @@
   }
 
   &--green {
+    background-color: $c-green;
   }
 }

@@ -1,0 +1,40 @@
+.results {
+  margin-bottom: 72px;
+}
+
+.results__title {
+  // padding-bottom: 164px;
+  padding-bottom: 0;
+
+  &::after {
+    top: 62px;
+  }
+}
+
+.results__slider-slide {
+  padding: 164px 0;
+}
+
+.results__slider-title {
+  padding-bottom: 15px;
+}
+
+.results__slider-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.results__b-next,
+.results__b-prev {
+  top: 89%;
+
+}
+
+.results__b-next {
+  right: 30%;
+}
+
+.results__b-prev {
+  left: 30%;
+}

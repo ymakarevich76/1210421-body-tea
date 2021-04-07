@@ -114,7 +114,7 @@
     left: -62px;
     width: 24px;
     height: 24px;
-    background: url("../img/icon/checked.svg") no-repeat;
+    background: url("../img/icon/checked-small.svg") no-repeat;
   }
 }
 .intro__bc {
@@ -122,4 +122,8 @@
   z-index: 100;
   position: relative;
   top: -43px;
+}
+
+.intro__bc img {
+  width: 100%;
 }

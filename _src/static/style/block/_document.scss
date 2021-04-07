@@ -1,0 +1,20 @@
+.documents {
+  margin-bottom: 127px;
+}
+
+.documents__title {
+  padding-bottom: 85px;
+
+  &::after {
+    top: 63px;
+  }
+}
+
+.documents__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.documnets__wrapper-img:first-child {
+  margin-right: 25px;
+}

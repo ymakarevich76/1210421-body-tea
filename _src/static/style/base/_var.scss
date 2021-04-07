@@ -2,6 +2,8 @@
 $ff-main: "GothamPro", sans-serif;
 $ff-intro: "HelveticaNeueCyr", sans-serif;
 $ff-title: "GothamPro Bold", sans-serif;
+$ff-product-title: "SF-UI-Display", sans-serif;
+$ff-product-text: "SF-UI-Text", sans-serif;
 
 // //////////////////////////////////////// font-size
 $fz-main: 14px;
@@ -16,9 +18,12 @@ $c-t-span--grey: #c1c1c1;
 $c-t-span--yellow: #c9ed25;
 $ellipse-grey: rgba(39, 174, 96, 0.12);
 $c-green: #08af00;
-$c-green-ellipse: #00ed2f;
+$c-green-light: #00ed2f;
 $c-line-grey: #d3d3d3;
+$c-border-grey: #e0e0e0;
 $c-white: #fff;
+$c-shadow: rgba(0, 0, 0, 0.1);
+$c-text-grey: #8d8b8b;
 // //////////////////////////////////////// breakpoints
 $sl: 1499.98px;
 $xl: 1199.98px;
@@ -32,14 +37,14 @@ $ss: 359.98px;
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px !important;
+  margin: 0 -10px !important;
 }
 
 .col {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
-$gap: 30px;
+$gap: 20px;
 $c-12: calc(100% - #{$gap});
 $c-11: calc(91.666667% - #{$gap});
 $c-10: calc(83.333333% - #{$gap});

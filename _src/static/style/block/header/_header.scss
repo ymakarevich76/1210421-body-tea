@@ -10,6 +10,10 @@
 
 .header__container-logo {
   max-width: 93px;
+
+  @media (min-width: $md) {
+    max-width: 156px;
+  }
 }
 
 .header__container-burger {
@@ -61,10 +65,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 23px;
-    width: 31px;
-    height: 3px;
+    top: 8px;
+    left: 6px;
+    width: 20px;
+    height: 2px;
+    background-color: $c-bc-burger;
   }
 
   &::before {
