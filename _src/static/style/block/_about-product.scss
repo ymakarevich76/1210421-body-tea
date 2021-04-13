@@ -2,9 +2,25 @@
   padding-bottom: 85px;
   margin-bottom: 95px;
   border-bottom: 2px solid $c-line-grey;
+
+  @media (min-width: $md) {
+    padding-bottom: 135px;
+    margin-bottom: 83px;
+  }
+}
+
+.about-product .container {
+  @media (min-width: $md) {
+    padding-right: 0;
+  }
 }
 
 .about-product__title {
+
+  @media (min-width: $md) {
+    font-size: 30px;
+    line-height: 39px;
+  }
 }
 
 .about-product__text {
@@ -16,4 +32,10 @@
   line-height: 42px;
   color: $c-green;
   white-space: pre-wrap;
+
+  @media (min-width: $md) {
+    max-width: 704px;
+    font-size: 35px;
+    line-height: 53px;
+  }
 }

@@ -1,4 +1,3 @@
-const createSlider = () => {
   new Swiper('.slider', {
     //Стрелки
     navigation: {
@@ -9,4 +8,3 @@ const createSlider = () => {
    loop: true,
    loopedSledies: 3,
   });
-}

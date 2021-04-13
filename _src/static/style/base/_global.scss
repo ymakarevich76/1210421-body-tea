@@ -12,6 +12,10 @@ body {
   color: $c-secondary;
 
   // overflow-x: hidden;
+  @media (min-width: $md) {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .main {

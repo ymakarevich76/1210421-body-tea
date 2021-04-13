@@ -1,6 +1,11 @@
 .header {
   margin-top: 40px;
   margin-bottom: 110px;
+
+  @media (min-width: $md) {
+    margin-top: 50px;
+    margin-bottom: 125px;
+  }
 }
 
 .header__container {
@@ -45,6 +50,11 @@
     height: 2px;
     background-color: $c-bc-burger;
     box-shadow: 0 16px 0 0 $c-bc-burger;
+  }
+
+  @media (min-width: $md) {
+    top: 11px;
+    left: 28px;
   }
 }
 

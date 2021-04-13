@@ -2,7 +2,31 @@
   border-bottom: 2px solid $c-line-grey;
   padding-bottom: 70px;
   margin-bottom: 97px;
+
+  @media (min-width: $md) {
+    padding-bottom: 115px;
+    margin-bottom: 109px;
+  }
+}
+
+.opinion .container {
+  @media (min-width: $md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .opinion__title {
+
+  @media (min-width: $md) {
+    padding-bottom: 112px;
+  }
+
+  &::after {
+
+    @media (min-width: $md) {
+        top: 124px;
+        left: 323px;
+    }
+  }
 }

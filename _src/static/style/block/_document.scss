@@ -1,5 +1,9 @@
 .documents {
   margin-bottom: 127px;
+
+  @media (min-width: $md) {
+    margin-bottom: 133px;
+  }
 }
 
 .documents__title {
@@ -7,6 +11,14 @@
 
   &::after {
     top: 63px;
+
+    @media (min-width: $md) {
+      top: 71px;
+    }
+  }
+
+  @media (min-width: $md) {
+    padding-bottom: 143px;
   }
 }
 
@@ -15,6 +27,10 @@
   justify-content: center;
 }
 
-.documnets__wrapper-img:first-child {
+.documents__wrapper-img:first-child {
   margin-right: 25px;
+
+  @media (min-width: $md) {
+    margin-right: 105px;
+  }
 }

@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 22px;
 
+  @media (min-width: $md) {
+    margin-bottom: 178px;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -11,6 +15,31 @@
     position: absolute;
     top: 215px;
     right: 0;
+
+    @media (min-width: $md) {
+      width: 338px;
+      height: 500px;
+      background: url("../img/background/bg-girl-tab.png") no-repeat;
+      top: -5px;
+      right: 0;
+    }
+  }
+}
+
+.intro__container {
+  position: relative;
+
+  @media (min-width: $md) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -30px;
+      right: -24px;
+      width: 190px;
+      height: 500px;
+      background: url("../img/background/bg-header-right-tab.png") no-repeat;
+    }
   }
 }
 
@@ -37,6 +66,14 @@
     background: url("../img/background/list-mobile.png") no-repeat;
     top: -3px;
     right: -20px;
+
+    @media (min-width: $md) {
+      width: 191px;
+      height: 88px;
+      background: url("../img/background/list-tab.png")no-repeat;
+      top: 10px;
+      right: 70px;
+    }
   }
 
   &::after {
@@ -45,6 +82,15 @@
     background: url("../img/background/list-blur-mobile.png") no-repeat;
     bottom: -170px;
     right: 30px;
+
+    @media (min-width: $md) {
+      right: 200px;
+    }
+  }
+
+  @media (min-width: $md) {
+    font-size: 75px;
+    line-height: 75px;
   }
 }
 
@@ -64,34 +110,120 @@
 
 .intro__t-spacing {
   word-spacing: -8px;
+
+  @media (min-width: $md) {
+    word-spacing: -20px;
+  }
 }
 
 .intro__text {
   margin-bottom: 35px;
 
+  @media (min-width: $md) {
+    margin-bottom: 45px;
+  }
+
   &--black {
     color: $c-main;
     margin-bottom: 50px;
+
+    @media (min-width: $md) {
+      margin-bottom: 113px;
+    }
+  }
+}
+
+.intro__text--grey br {
+  display: none;
+
+  @media (min-width: $md) {
+    display: block;
+  }
+}
+
+.intro__text--black br {
+  @media (min-width: $md) {
+    display: none;
   }
 }
 
 .intro__btn {
   max-width: 191px;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   padding: 22px;
   margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+
+    @media (min-width: $md) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 105px;
+      left: 180px;
+      width: 232px;
+      height: 123px;
+      background: url("../img/background/list-blur-tab.png") no-repeat;
+    }
+  }
+
+  @media (min-width: $md) {
+    max-width: 210px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 24px;
+  }
+}
+
+.intro__btn br {
+  display: none;
 }
 
 .intro__list {
   display: flex;
   flex-direction: column;
   margin-left: 78px;
+
+  @media (min-width: $md) {
+    // flex-direction: row;
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 180px;
+    position: relative;
+    background-color: $c-white;
+    border-radius: 10px;
+    margin-left: 0;
+    max-width: 707px;
+    padding: 70px 0 30px 145px;
+    box-shadow: 10px 50px 50px $c-shadow-grey;
+  }
+
+  &::before {
+
+    @media (min-width: $md) {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 130px;
+      position: absolute;
+      top: 35px;
+      left: 353px;
+      background-color: $c-border-grey;
+    }
+  }
 }
 
 .intro__item {
   position: relative;
   margin-bottom: 52px;
+
+  @media (min-width: $md) {
+    line-height: 24px;
+  }
 
   &::before,
   &::after {
@@ -117,13 +249,29 @@
     background: url("../img/icon/checked-small.svg") no-repeat;
   }
 }
+
 .intro__bc {
+  position: relative;
+}
+
+.intro__bc-mob {
   width: 100%;
   z-index: 100;
   position: relative;
   top: -43px;
+
+  @media (min-width: $md) {
+    display: none;
+  }
 }
 
-.intro__bc img {
+.intro__bc-mob img {
   width: 100%;
+}
+
+.intro__bc-tab {
+  position: absolute;
+  top: -300px;
+  left: 0;
+  z-index: -1;
 }

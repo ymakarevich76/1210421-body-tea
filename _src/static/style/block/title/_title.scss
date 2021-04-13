@@ -10,6 +10,12 @@
   color: $c-main;
   text-transform: uppercase;
 
+  @media (min-width: $md) {
+    font-size: 35px;
+    line-height: 46px;
+    padding-bottom: 92px;
+  }
+
   &--line {
     &::after {
       content: "";
@@ -20,6 +26,10 @@
       width: 74px;
       height: 1px;
       background-color: $c-green;
+
+      @media (min-width: $md) {
+        top: 78px;
+      }
     }
   }
 
@@ -35,6 +45,11 @@
       width: 74px;
       height: 1px;
       background-color: $c-green;
+
+      @media (min-width: $md) {
+        top: 79px;
+        left: 302px;
+      }
     }
   }
 }
