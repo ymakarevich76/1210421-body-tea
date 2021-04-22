@@ -24,4 +24,11 @@
   @media (min-width: $sl) {
       max-width: 1300px;
   }
+
+  &--lg {
+    
+    @media (min-width: $xl) {
+      max-width: 1400px;
+    }
+  }
 }

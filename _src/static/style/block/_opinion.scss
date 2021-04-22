@@ -1,11 +1,16 @@
 .opinion {
   border-bottom: 2px solid $c-line-grey;
   padding-bottom: 70px;
-  margin-bottom: 97px;
+  margin-bottom: 100px;
 
   @media (min-width: $md) {
     padding-bottom: 115px;
     margin-bottom: 109px;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 82px;
+    margin-bottom: 120px;
   }
 }
 
@@ -22,11 +27,110 @@
     padding-bottom: 112px;
   }
 
+  @media (min-width: $xl) {
+    padding-bottom: 95px;
+  }
+}
+
+.opinion__slider-slide {
+  @media (min-width: $md) {
+    display: grid;
+    grid-template-columns: 175px 487px;
+    gap: 58px;
+    padding-bottom: 85px;
+    position: relative;
+  }
+
+  @media (min-width: $xl) {
+    grid-template-columns: 500px 1fr;
+  }
+
   &::after {
 
     @media (min-width: $md) {
-        top: 124px;
-        left: 323px;
+      content: "";
+      display: block;
+      width: 73px;
+      height: 62px;
+      position: absolute;
+      bottom: 23px;
+      right: 30px;
+      background: url("../img/icon/quotes.svg") no-repeat;
     }
+
+    @media (min-width: $xl) {
+      bottom: 95px;
+      right: 10px;
+    }
+  }
+}
+
+.opinion__slider-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media (min-width: $md) {
+    justify-content: left;
+    padding-top: 14px;
+    padding-left: 8px;
+  }
+}
+
+.opinion__slider-title {
+  text-align: center;
+  color: $c-green;
+  line-height: 29px;
+  padding-bottom: 41px;
+
+  @media (min-width: $md) {
+    text-align: left;
+    display: flex;
+    justify-content: right;
+    line-height: 43px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 100px;
+    line-height: 91px;
+    padding-bottom: 60px;
+  }
+}
+
+.opinion__slider-text {
+  padding-left: 25px;
+  border-left: 10px solid $c-green;
+
+  font-size: 15px;
+  line-height: 25px;
+
+  @media (min-width: $md) {
+    padding-left: 35px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.opinion__slider-b-next {
+  @media (min-width: $md) {
+    right: 49%;
+  }
+
+  @media (min-width: $xl) {
+    right: 39%;
+  }
+}
+
+.opinion__slider-b-prev {
+  @media (min-width: $md) {
+    left: 32%;
+  }
+
+  @media (min-width: $xl) {
+    left: 49%;
   }
 }

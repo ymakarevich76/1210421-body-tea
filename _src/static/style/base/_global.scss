@@ -11,10 +11,16 @@ body {
   line-height: 23px;
   color: $c-secondary;
 
-  // overflow-x: hidden;
+  overflow-x: hidden;
+
   @media (min-width: $md) {
     font-size: 15px;
     line-height: 25px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

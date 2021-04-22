@@ -1,16 +1,26 @@
 .header {
   margin-top: 40px;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
 
   @media (min-width: $md) {
     margin-top: 50px;
-    margin-bottom: 125px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $xl) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $xl) {
+    min-height: 50px;
+  }
 }
 
 .header__container-logo {
@@ -23,12 +33,15 @@
 
 .header__container-burger {
   position: relative;
-  // display: none;
   width: 30px;
   height: 18px;
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $xl) {
+    display: none;
+  }
 
   &:hover,
   &:active {
@@ -80,6 +93,13 @@
     width: 20px;
     height: 2px;
     background-color: $c-bc-burger;
+
+    @media (min-width: $md) {
+      top: 18px;
+      left: 31px;
+      width: 25px;
+      height: 2px;
+    }
   }
 
   &::before {
@@ -89,5 +109,14 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+
+.header__nav {
+  width: 100%;
+
+  @media (min-width: $xl) {
+    width: auto;
   }
 }

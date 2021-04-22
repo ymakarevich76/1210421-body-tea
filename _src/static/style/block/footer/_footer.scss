@@ -6,4 +6,9 @@
   position: absolute;
   top: -12px;
   left: 0;
+
+  @media (min-width: $xl) {
+    top: 0;
+    left: -5%;
+  }
 }

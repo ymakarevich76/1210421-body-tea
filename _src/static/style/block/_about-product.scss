@@ -7,6 +7,12 @@
     padding-bottom: 135px;
     margin-bottom: 83px;
   }
+
+  @media (min-width: $xl) {
+    position: relative;
+    padding-bottom: 183px;
+    margin-bottom: 125px;
+  }
 }
 
 .about-product .container {
@@ -20,6 +26,11 @@
   @media (min-width: $md) {
     font-size: 30px;
     line-height: 39px;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 35px;
+    line-height: 46px;
   }
 }
 
@@ -37,5 +48,12 @@
     max-width: 704px;
     font-size: 35px;
     line-height: 53px;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 615px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

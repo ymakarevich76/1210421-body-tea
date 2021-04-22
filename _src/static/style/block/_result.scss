@@ -13,12 +13,19 @@
     padding-bottom: 162px;
   }
 
+  @media (min-width: $xl) {
+    padding-bottom: 76px;
+  }
+
   &::after {
     top: 62px;
 
     @media (min-width: $md) {
-      top: 75px;
-      left: 303px;
+      top: 77px;
+    }
+
+    @media (min-width: $xl) {
+      top: 69px;
     }
   }
 }
@@ -31,12 +38,29 @@
     display: flex;
     justify-content: center;
   }
+
+  @media (min-width: $xl) {
+    padding-bottom: 132px;
+  }
 }
 
-.results__slider-wrap:nth-child(1) {
+.results__slider-wrap {
 
-  @media (min-width: $md) {
-    margin-right: 30px;
+  &:nth-child(1) {
+
+    @media (min-width: $md) {
+      margin-right: 30px;
+    }
+
+    @media (min-width: $xl) {
+      margin-right: 45px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $xl) {
+      // margin-left: 20px;
+    }
   }
 }
 
@@ -50,6 +74,10 @@
     line-height: 46px;
     padding-bottom: 39px;
     text-align: left;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 55px;
   }
 }
 
@@ -66,20 +94,32 @@
   @media (min-width: $md) {
     top: 80%;
   }
+
+  @media (min-width: $xl) {
+    top: 42%;
+  }
 }
 
 .results__b-next {
-  right: 30%;
+  right: 32%;
 
   @media (min-width: $md) {
-    right: 37%;
+    right: 39%;
+  }
+
+  @media (min-width: $xl) {
+    right: 6%;
   }
 }
 
 .results__b-prev {
-  left: 30%;
+  left: 33%;
 
   @media (min-width: $md) {
     left: 43%;
+  }
+
+  @media (min-width: $xl) {
+    left: 6%;
   }
 }

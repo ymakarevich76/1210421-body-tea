@@ -4,10 +4,22 @@
   @media (min-width: $md) {
     margin-bottom: 133px;
   }
+
+  @media (min-width: $xl) {
+    margin-bottom: 165px;
+  }
 }
 
 .documents__title {
   padding-bottom: 85px;
+  
+  @media (min-width: $md) {
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 148px;
+  }
 
   &::after {
     top: 63px;
@@ -15,11 +27,12 @@
     @media (min-width: $md) {
       top: 71px;
     }
+
+    @media (min-width: $xl) {
+      top: 70px;
+    }
   }
 
-  @media (min-width: $md) {
-    padding-bottom: 143px;
-  }
 }
 
 .documents__wrapper {

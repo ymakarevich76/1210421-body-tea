@@ -41,14 +41,22 @@
       display: block;
       position: absolute;
       top: 90px;
-      left: 140px;
+      left: 50%;
+      transform: translate(-35px);
       width: 74px;
       height: 1px;
       background-color: $c-green;
 
       @media (min-width: $md) {
-        top: 79px;
-        left: 302px;
+          top: 124px;
+          left: 50%;
+          transform: translate(-35px);
+      }
+
+      @media (min-width: $xl) {
+        top: 124px;
+        left: 50%;
+        transform: translate(-35px);
       }
     }
   }

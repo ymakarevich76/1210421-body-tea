@@ -1,4 +1,6 @@
 .btn {
+  background-color: transparent;
+  border: none;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -16,9 +18,25 @@
   
   &--orange {
     background-color: $c-accent;
+
+    &:hover {
+      background-color: $c-btn-hover;
+    }
+
+    &:active {
+      background-color: $c-btn-active;
+    }
   }
 
   &--green {
     background-color: $c-green;
+
+    &:hover {
+      background-color: $c-green-light;
+    }
+
+    &:active {
+      background-color: $c-green-dark;
+    }
   }
 }

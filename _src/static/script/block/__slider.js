@@ -4,7 +4,10 @@
       nextEl: '.slider__b-next',
       prevEl: '.slider__b-prev'
     },
-   autoHeigth: true,
-   loop: true,
-   loopedSledies: 3,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoHeigth: true,
+    loop: true,
   });

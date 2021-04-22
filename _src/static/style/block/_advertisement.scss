@@ -1,15 +1,22 @@
 .advertisement {
   padding-bottom: 99px;
+  position: relative;
 
   @media (min-width: $md) {
     padding-bottom: 88px;
   }
-}
 
-.advertisement .container {
-
-  @media (min-width: $md) {
-    padding-left: 5px;
+  &::after {
+    @media (min-width: $xl) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 119px;
+      height: 138px;
+      background: url("../img/advertisement/list-blur-desc.png") no-repeat;
+      bottom: 55px;
+      right: 300px;
+    }
   }
 }
 
@@ -22,6 +29,14 @@
   }
 }
 
+.advertisement__title br {
+  display: none;
+
+  @media (min-width: $xl) {
+    display: block;
+  }
+}
+
 .advertisement__photo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,6 +45,11 @@
   @media (min-width: $md) {
     grid-template-columns: 241px 218px 186px;
     gap: 34px;
+    justify-content: center;
+  }
+
+  @media (min-width: $xl) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -45,12 +65,20 @@
   @media (min-width: $md) {
     margin-left: 5px;
   }
+
+  @media (min-width: $xl) {
+    margin-left: 0;
+  }
 }
 
 .advertisement__photo picture:nth-child(4) {
 
   @media (min-width: $md) {
     margin-top: -34px;
+  }
+
+  @media (min-width: $xl) {
+    margin-top: -120px;
   }
 }
 
@@ -61,6 +89,10 @@
     margin-left: -20px;
     margin-top: -3px;
   }
+
+  @media (min-width: $xl) {
+    margin-left: 0;
+  }
 }
 
 .advertisement__photo picture:nth-child(6) {
@@ -68,5 +100,9 @@
   @media (min-width: $md) {
     margin-top: -74px;
     margin-left: 5px;
+  }
+
+  @media (min-width: $xl) {
+    margin-left: 0;
   }
 }
