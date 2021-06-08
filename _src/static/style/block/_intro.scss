@@ -282,60 +282,68 @@
   @media (min-width: $md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 180px;
     position: relative;
     background-color: $c-white;
     border-radius: 10px;
     margin-left: 0;
-    max-width: 707px;
-    padding: 70px 0 30px 145px;
+    padding: 70px 0 30px;
     box-shadow: 10px 50px 50px $c-shadow-grey;
   }
 
   @media (min-width: $xl) {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 90px;
-    margin-left: 40px;
     max-width: 100%;
-  }
-
-  &::before {
-
-    @media (min-width: $md) {
-      content: "";
-      display: block;
-      width: 2px;
-      height: 130px;
-      position: absolute;
-      top: 35px;
-      left: 353px;
-      background-color: $c-border-grey;
-    }
-  }
-
-  &::after {
-
-    @media (min-width: $xl) {
-      content: "";
-      display: block;
-      width: 2px;
-      height: 130px;
-      position: absolute;
-      top: 35px;
-      right: 360px;
-      background-color: $c-border-grey;
-    }
   }
 }
 
 .intro__item {
   position: relative;
   margin-bottom: 52px;
+  padding-left: 155px;
 
   @media (min-width: $md) {
     line-height: 24px;
   }
+    
+  &:first-child {
+    &::after {
+      @media (min-width: $md) {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 130px;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        background-color: $c-border-grey;
+      }
+    }
+  }
 
+  &:last-child {
+    display: none;
+
+    @media (min-width: $xl) {
+      display: block;
+    }
+
+    &::after {
+      @media (min-width: $xl) {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 130px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        background-color: $c-border-grey;
+      }
+    }
+  }
+  
+}
+
+.intro__item-text {
   &::before,
   &::after {
     content: "";
@@ -345,7 +353,7 @@
   
   &::before {
     top: 0;
-    left: -78px;
+    left: 55px;
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -354,17 +362,10 @@
 
   &::after {
     top: 16px;
-    left: -62px;
+    left: 70px;
     width: 24px;
     height: 24px;
     background: url("../img/icon/checked-small.svg") no-repeat;
   }
 
-  &:last-child {
-    display: none;
-
-    @media (min-width: $xl) {
-      display: block;
-    }
-  }
 }
