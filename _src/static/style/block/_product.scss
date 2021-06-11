@@ -85,6 +85,7 @@
 .product__wrap {
   @media (min-width: $xl) {
     display: flex;
+    justify-content: center;
     position: relative;
     z-index: 100;
   }

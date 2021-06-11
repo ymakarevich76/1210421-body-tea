@@ -1,79 +1,73 @@
 .intro {
   position: relative;
-  margin-bottom: 22px;
-  padding-top: 70px;
-  padding-bottom: 407px;
-  background: url("../img/background/bg-header-mobile.png") no-repeat 0 613px;
-  background-size: contain;
+  padding-top: 185px;
+  padding-bottom: 50px;
+  margin-bottom: 120px;
+  background: url("../img/background/bg-header-left-desc.png") no-repeat -65px 436px;
 
-  @media (min-width: $md) {
+  @media (max-width: $md) {
+    margin-bottom: 22px;
+    padding-top: 70px;
+    padding-bottom: 0;
+    min-height: 795px;
+    background: url("../img/background/bg-header-mobile-1.png") no-repeat bottom center;
+    background-size: auto;
+  }
+  
+  @media (max-width: $xl) {
+    min-height: auto;
     margin-bottom: 0;
     padding-top: 75px;
     padding-bottom: 180px;
     background: url("../img/background/bg-header-left-tab.png") no-repeat 0 468px;
   }
 
-  @media (min-width: $xl) {
-    padding-top: 185px;
-    padding-bottom: 50px;
-    margin-bottom: 120px;
-    background: url("../img/background/bg-header-left-desc.png") no-repeat -65px 436px;
-  }
-
   &::after {
     content: "";
     display: block;
-    width: 203px;
-    height: 376px;
-    background: url("../img/background/bg-girl-mobile.png") no-repeat;
     position: absolute;
-    top: 286px;
-    right: 0;
-    z-index: -1;
+    top: 0;
+    width: 638px;
+    height: 766px;
+    background: url("../img/background/bg-girl-desc.png") no-repeat;
+    right: -100px;
+    z-index: 1;
 
-    @media (min-width: $md) {
-      width: 338px;
-      height: 500px;
+    @media (max-width: $lg) {
+      width: 416px;
+      height: 513px;
       background: url("../img/background/bg-girl-tab.png") no-repeat;
       top: 70px;
+      right: -35px;
+    }
+
+    @media (max-width: $md) {
+      width: 203px;
+      height: 376px;
+      background: url("../img/background/bg-girl-mobile.png") no-repeat;
       right: 0;
-      z-index: 100;
+      top: 286px;
+      z-index: -1;
     }
-
-    @media (min-width: $xl) {
-      width: 638px;
-      height: 766px;
-      background: url("../img/background/bg-girl-desc.png") no-repeat;
-      right: 9px;
-    }
-
   }
-}
 
-.intro__container {
-  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
+      @media (max-width: $xl) {
+      top: 50px;
+      right: -15px;
+      width: 203px;
+      height: 500px;
+      background: url("../img/background/bg-header-right-tab.png") no-repeat;
+      }
 
-        @media (min-width: $md) {
-        top: -30px;
-        right: -24px;
-        width: 190px;
-        height: 500px;
-        background: url("../img/background/bg-header-right-tab.png") no-repeat;
-        }
-
-        @media (min-width: $xl) {
-          top: -155px;
-          right: -296px;
-          width: 604px;
-          height: 766px;
-          background: url("../img/background/bg-header-right-desc.png") no-repeat;
-        }
-    }
+      @media (max-width: $md) {
+        display: none;
+      }
+  }
 }
 
 .intro__title {
@@ -81,22 +75,21 @@
   font-family: $ff-intro;
   font-weight: 900;
   font-style: normal;
-  font-size: 45px;
-  line-height: 43px;
   text-transform: uppercase;
-  margin-bottom: 25px;
-
+  font-size: 120px;
+  line-height: 97px;
+  margin-bottom: 48px;
   
-  @media (min-width: $md) {
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 20px;
-  }
+    @media (max-width: $md) {
+      font-size: 45px;
+      line-height: 43px;
+      margin-bottom: 25px;
+    }
 
-  @media (min-width: $xl) {
-    font-size: 120px;
-    line-height: 97px;
-    margin-bottom: 48px;
+    @media (max-width: $xl) {
+      font-size: 75px;
+      line-height: 75px;
+      margin-bottom: 20px;
   }
 
   &::before,
@@ -112,6 +105,7 @@
     background: url("../img/background/list-mobile.png") no-repeat;
     top: -3px;
     right: -20px;
+    z-index: -2;
 
     @media (min-width: $md) {
       width: 191px;
@@ -121,12 +115,16 @@
       right: 70px;
     }
 
+    @media (min-width: $lg) {
+      right: 260px;
+    }
+
     @media (min-width: $xl) {
       width: 303px;
       height: 139px;
       background: url("../img/background/list-desc.png")no-repeat;
-      top: -90px;
-      right: 159px;
+      top: -10px;
+      right: 135px;
     }
   }
 
@@ -278,6 +276,13 @@
   display: flex;
   flex-direction: column;
   margin-left: 78px;
+  position: relative;
+  z-index: 100;
+
+  @media (min-width: $xl) {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
 
   @media (min-width: $md) {
     display: grid;
@@ -285,15 +290,15 @@
     position: relative;
     background-color: $c-white;
     border-radius: 10px;
-    margin-left: 0;
     padding: 70px 0 30px;
     box-shadow: 10px 50px 50px $c-shadow-grey;
   }
 
-  @media (min-width: $xl) {
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 100%;
+  @media (max-width: $md) {
+    margin-left: 0;
   }
+
+
 }
 
 .intro__item {
@@ -303,6 +308,10 @@
 
   @media (min-width: $md) {
     line-height: 24px;
+  }
+
+  @media (max-width: $md) {
+    padding-left: 80px;
   }
     
   &:first-child {
@@ -358,6 +367,10 @@
     height: 56px;
     border-radius: 50%;
     background-color: $ellipse-grey;
+
+    @media (max-width: $md) {
+      left: 0;
+    }
   }
 
   &::after {
@@ -366,6 +379,10 @@
     width: 24px;
     height: 24px;
     background: url("../img/icon/checked-small.svg") no-repeat;
+
+    @media (max-width: $md) {
+      left: 16px;
+    }
   }
 
 }
