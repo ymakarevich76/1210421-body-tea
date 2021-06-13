@@ -24,11 +24,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    // grid-template-areas: 
-    // "1 5"
-    // "2 6"
-    // "3 7"
-    // "4 7";
     gap: 80px;
   }
 }
@@ -45,30 +40,6 @@
     max-width: 525px;
     margin-bottom: 0;
   }
-
-  // &:nth-child(1) {
-  //   @media (min-width: $xl) {
-  //     grid-area: 1;
-  //   }
-  // }
-
-  // &:nth-child(2) {
-  //   @media (min-width: $xl) {
-  //     grid-area: 2;
-  //   }
-  // }
-
-  // &:nth-child(3) {
-  //   @media (min-width: $xl) {
-  //     grid-area: 3;
-  //   }
-  // }
-
-  // &:nth-child(4) {
-  //   @media (min-width: $xl) {
-  //     grid-area: 4;
-  //   }
-  // }
 
   &:nth-child(5) {
     @media (min-width: $xl) {
@@ -111,14 +82,25 @@
 }
 
 .contains__desc-title br {
-  display: none;
 
-  @media (min-width: $md) {
-    display: block;
+  &:first-child {
+    @media (min-width: $md) {
+      display: block;
+    }
+
+    @media (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $md) {
+      display: none;
+    }
   }
 }
 
-.contains__desc-text {
+  .contains__desc-text {
   max-width: 253px;
   min-height: 80px;
   white-space: pre-wrap;
@@ -134,8 +116,8 @@
 
 .contains__desc-img {
   position: absolute;
-  top: 18px;
-  right: 13px;
+  top: 0;
+  right: -10px;
 
   @media (min-width: $md) {
     top: 3px;

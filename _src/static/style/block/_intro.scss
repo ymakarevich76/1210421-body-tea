@@ -33,7 +33,7 @@
     right: -100px;
     z-index: 1;
 
-    @media (max-width: $lg) {
+    @media (max-width: $xl) {
       width: 416px;
       height: 513px;
       background: url("../img/background/bg-girl-tab.png") no-repeat;
@@ -179,7 +179,7 @@
 
   @media (min-width: $xl) {
     display: flex;
-    padding-bottom: 175px;
+    padding-bottom: 105px;
   }
 }
 
@@ -197,7 +197,7 @@
 
   &--black {
     color: $c-main;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media (min-width: $md) {
       margin-bottom: 113px;
@@ -279,11 +279,6 @@
   position: relative;
   z-index: 100;
 
-  @media (min-width: $xl) {
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 100%;
-  }
-
   @media (min-width: $md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -293,17 +288,17 @@
     padding: 70px 0 30px;
     box-shadow: 10px 50px 50px $c-shadow-grey;
   }
-
-  @media (max-width: $md) {
+  
+  @media (min-width: $lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
     margin-left: 0;
   }
-
-
 }
 
 .intro__item {
   position: relative;
-  margin-bottom: 52px;
+  margin-bottom: 30px;
   padding-left: 155px;
 
   @media (min-width: $md) {
@@ -332,12 +327,12 @@
   &:last-child {
     display: none;
 
-    @media (min-width: $xl) {
+    @media (min-width: $lg) {
       display: block;
     }
 
     &::after {
-      @media (min-width: $xl) {
+      @media (min-width: $lg) {
         content: "";
         display: block;
         width: 2px;
@@ -384,5 +379,4 @@
       left: 16px;
     }
   }
-
 }
